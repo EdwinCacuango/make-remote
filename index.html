@@ -5,63 +5,70 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
   <link href="/styles.css" rel="stylesheet" />
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
 </head>
 
 <body class="mx-10 max-h-screen">
   <!-- <img src="/images/icon-menu.svg" /> -->
-  <header class="my-8">
-    <nav class="flex gap-6 items-star">
-      <img src="/images/logo.svg " />
-      <div class="flex justify-between w-full items-start">
-        <ul class="flex gap-3 p-1">
-          <li><a>Features</a></li>
-          <li><a>Company</a></li>
-          <li><a>Careers</a></li>
-          <li><a>About</a></li>
+  <header class="my-8 mb-12">
+    <nav class="flex gap-6 items-center">
+      <div class="logo-container"><img src="/images/logo.svg " /></div>
+      <div class="flex justify-between w-full">
+        <ul class="flex gap-4 items-center">
+          <li><a class="text-xl cursor-pointer">Features <img src="/images/icon-arrow-down.svg"
+                class="inline ml-1" /></a></li>
+          <li><a class="text-xl cursor-pointer">Company <img src="/images/icon-arrow-down.svg"
+                class="inline ml-1" /></a></li>
+          <li><a class="text-xl cursor-pointer">Careers</a></li>
+          <li><a class="text-xl cursor-pointer">About</a></li>
         </ul>
-        <ul class="flex gap-3">
-          <li><a>Login</a></li>
-          <li><a>Register</a></li>
+        <ul class="flex gap-4 items-center">
+          <li><a class="text-xl cursor-pointer">Login</a></li>
+          <li class="border border-black rounded-xl px-3 py-1"><a class="text-xl cursor-pointer">Register</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <!--  -->
   <main class="main">
-    <div class="grid content-center main-content">
+    <div class="grid conten-center main-content ">
       <h1 class="h1-title">Make remote work</h1>
-      <p class="my-8 text-3xl">
+      <p class="text-3xl my-10">
         Get your team in sync, no matter your location. Streamline processes,
         create team rituals, and watch productivity soar.
       </p>
-      <button class="border border-current w-32 text-xl px-3 py-2 rounded-xl">Learn more</button>
-      <div class="flex justify-between my-4">
+      <button class="border border-black w-32 text-xl rounded-xl py-2 px-3">Learn more</button>
+      <div class="flex items-center justify-between clients-box h-8 mt-12 clients-box">
         <img src="/images/client-databiz.svg" />
         <img src="/images/client-audiophile.svg" />
         <img src="/images/client-meet.svg" />
         <img src="/images/client-maker.svg" />
       </div>
     </div>
+    <!-- Hero img section -->
     <div class="hero-image">
       <img src="/images/image-hero-desktop.png" />
     </div>
   </main>
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/EdwinCacuango" target="_blank">Edwin Cacuango</a>.
+  </footer>
 </body>
 
 </html>

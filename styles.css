@@ -1,23 +1,28 @@
 .h1-title {
   font-size: 8.25rem;
-  line-height: 6.5rem;
+  line-height: 7.5rem;
+  margin-top: 7.146875rem;
+}
+
+.logo-container img {
+  max-width: 100%;
 }
 
 .main {
   display: flex;
   min-width: 61.6232rem;
   gap: 8.36rem;
+  margin-bottom: 6rem;
 }
 
 .main-content {
   max-width: 32 rem;
 }
 
-/* .hero-image {
-  width: 20.125rem;
-  height: 30.0625rem;
-} */
-
 .hero-image img {
+  max-width: 100%;
+}
+
+.clients-box img {
   max-width: 100%;
 }
