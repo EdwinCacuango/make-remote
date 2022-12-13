@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+  <link href="/styles.css" rel="stylesheet" />
+</head>
+
+<body class="mx-10 max-h-screen">
+  <!-- <img src="/images/icon-menu.svg" /> -->
+  <header class="my-8">
+    <nav class="flex gap-6 items-star">
+      <img src="/images/logo.svg " />
+      <div class="flex justify-between w-full items-start">
+        <ul class="flex gap-3 p-1">
+          <li><a>Features</a></li>
+          <li><a>Company</a></li>
+          <li><a>Careers</a></li>
+          <li><a>About</a></li>
+        </ul>
+        <ul class="flex gap-3">
+          <li><a>Login</a></li>
+          <li><a>Register</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--  -->
+  <main class="main">
+    <div class="grid content-center main-content">
+      <h1 class="h1-title">Make remote work</h1>
+      <p class="my-8 text-3xl">
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <button class="border border-current w-32 text-xl px-3 py-2 rounded-xl">Learn more</button>
+      <div class="flex justify-between my-4">
+        <img src="/images/client-databiz.svg" />
+        <img src="/images/client-audiophile.svg" />
+        <img src="/images/client-meet.svg" />
+        <img src="/images/client-maker.svg" />
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="/images/image-hero-desktop.png" />
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>
