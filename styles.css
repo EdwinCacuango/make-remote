@@ -8,6 +8,10 @@
   max-width: 100%;
 }
 
+.drop-align-left {
+  margin-left: -4%;
+}
+
 .main {
   display: flex;
   min-width: 61.6232rem;
