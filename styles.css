@@ -74,5 +74,6 @@
 
   .clients-box img {
     max-width: 90%;
+    max-height: 100%;
   }
 }
