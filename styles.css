@@ -13,6 +13,7 @@
 }
 
 .main {
+  margin: 0 auto;
   display: flex;
   min-width: 61.6232rem;
   gap: 8.36rem;
@@ -33,4 +34,45 @@
 
 .show-menu {
   display: block;
+}
+
+@media (max-width:768px) {
+  .main {
+    flex-direction: column-reverse;
+    width: 21.4375rem;
+    gap: 1rem;
+    max-height: 100vh;
+    margin-bottom: 2rem;
+  }
+
+  .main-content {
+    box-sizing: content-box;
+    width: inherit;
+    word-wrap: break-word;
+
+  }
+
+  .hero-image {
+    width: 375px;
+  }
+
+  .h1-title {
+    font-size: 2.25rem;
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+  }
+
+  .hero-image img {
+    content: url("/images/image-hero-mobile.png");
+  }
+
+  .clients-box {
+    width: 375px;
+  }
+
+  .clients-box img {
+    max-width: 90%;
+  }
 }
