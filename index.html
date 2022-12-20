@@ -23,7 +23,7 @@
   </style>
 </head>
 
-<body class="mx-10 max-h-screen">
+<body class="mx-10 max-h-screen bg-gray-100">
   <!-- <img src="/images/icon-menu.svg" /> -->
   <header class="my-8 mb-12">
     <nav class="flex gap-6 items-center">
@@ -32,14 +32,14 @@
         <ul class="flex gap-8 items-center">
           <li>
             <ul>
-              <li>
+              <li id="feature-btn">
                 <a class="text-xl cursor-pointer">Features <img src="/images/icon-arrow-down.svg" class="inline ml-1" />
                 </a>
               </li>
               <!-- Drop down menu -->
-              <li>
+              <li id="feature-menu" class="hidden">
                 <ul
-                  class="absolute w-34  border-gray-200 rounded-lg shadow-md p-6 rounded-lg mt-3 drop-align-left flex flex-col gap-3 drop-shadow-lg">
+                  class="absolute w-34 bg-white rounded-lg shadow-md p-6 rounded-lg mt-3 drop-align-left flex flex-col gap-3 drop-shadow-2xl">
                   <li>
                     <a class="flex items-center gap-3">
                       <img src="/images/icon-todo.svg" />Todo
@@ -63,26 +63,29 @@
           </li>
           <li>
             <ul>
-              <li>
-                <a class="text-xl cursor-pointer">Company <img src="/images/icon-arrow-down.svg" class="inline ml-1" />
+              <li id="company-btn">
+                <a class="text-xl cursor-pointer">Company<img src="/images/icon-arrow-down.svg" class="inline ml-1" />
                 </a>
               </li>
-              <li>
-                <ul class="absolute w-28 bg-black px-5 py-4 rounded-lg text-white mt-3 ml-2">
+              <!-- Drop down Company menu -->
+              <li id="company-menu" class="hidden bg-white z-50">
+                <ul
+                  class="absolute w-30 bg-white px-6 py-4 rounded-lg mt-3 ml-2 drop-shadow-2xl  shadow-md drop-shadow-2xl">
                   <li><a>History</a></li>
-                  <li><a>Our team</a></li>
+                  <li class="my-3"><a>Our team</a></li>
                   <li><a>Blog</a></li>
                 </ul>
               </li>
             </ul>
 
           </li>
-          <li><a class="text-xl cursor-pointer">Careers</a></li>
+          <li><a class=" text-xl cursor-pointer">Careers</a></li>
           <li><a class="text-xl cursor-pointer">About</a></li>
         </ul>
         <ul class="flex gap-4 items-center">
           <li><a class="text-xl cursor-pointer">Login</a></li>
-          <li class="border border-black rounded-xl px-3 py-1"><a class="text-xl cursor-pointer">Register</a></li>
+          <li class="border border-black rounded-xl px-3 py-1"><a class="text-xl cursor-pointer">Register</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -113,5 +116,7 @@
     Coded by <a href="https://github.com/EdwinCacuango" target="_blank">Edwin Cacuango</a>.
   </footer>
 </body>
+<script src="/app.js" type="text/javascript">
+</script>
 
 </html>

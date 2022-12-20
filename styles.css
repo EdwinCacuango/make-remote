@@ -30,3 +30,7 @@
 .clients-box img {
   max-width: 100%;
 }
+
+.show-menu {
+  display: block;
+}
